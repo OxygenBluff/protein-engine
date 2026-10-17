@@ -668,15 +668,15 @@ if __name__ == "__main__":
     }
 
     sample_targets_local = {
-        "hydro_min": 5.0,
-        "hydro_max": 25.0,
-        "mass_min": 2700,
-        "mass_max": 3100,
+        "hydro_min": 0.5,
+        "hydro_max": 1.5,
+        "mass_min": 1700,
+        "mass_max": 2200,
         "stability_min": 80.0,
-        "binding_min": 140.0
+        "binding_min": 10.0
     }
 
-    target_length_local = 26
+    target_length_local = 15
     biological_switch_local = True
 
     weights_local = user_target_weights(sample_targets_local, target_length_local)

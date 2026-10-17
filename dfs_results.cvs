@@ -1,313 +1,129 @@
 STEP     | ACTION     | LVL    | LAST_AA    | PRUNE_REASON         | SEQUENCE
 ------------------------------------------------------------------------------------------------------------------------
 Step,Action,Level,Last_AA,Prune_Reaosn,Sequence
-1        | ADD        | 1      | Val        | -                                   | Val
-2        | ADD        | 2      | Pro        | -                                   | Val-Pro
-3        | ADD        | 3      | Ser        | -                                   | Val-Pro-Ser
-4        | PRUNE      | 3      | Ser        | charged ends exception              | Val-Pro-Ser
-4        | ADD        | 3      | Ile        | -                                   | Val-Pro-Ile
-5        | PRUNE      | 3      | Ile        | charged ends exception              | Val-Pro-Ile
-5        | ADD        | 3      | Thr        | -                                   | Val-Pro-Thr
-6        | PRUNE      | 3      | Thr        | charged ends exception              | Val-Pro-Thr
-6        | ADD        | 3      | Leu        | -                                   | Val-Pro-Leu
-7        | PRUNE      | 3      | Leu        | charged ends exception              | Val-Pro-Leu
-7        | ADD        | 3      | Cys        | -                                   | Val-Pro-Cys
-8        | PRUNE      | 3      | Cys        | charged ends exception              | Val-Pro-Cys
-8        | ADD        | 3      | Ala        | -                                   | Val-Pro-Ala
-9        | PRUNE      | 3      | Ala        | charged ends exception              | Val-Pro-Ala
-9        | ADD        | 3      | Asp        | -                                   | Val-Pro-Asp
-10       | PRUNE      | 3      | Asp        | charged ends exception              | Val-Pro-Asp
-10       | ADD        | 3      | Asn        | -                                   | Val-Pro-Asn
-11       | PRUNE      | 3      | Asn        | charged ends exception              | Val-Pro-Asn
-11       | ADD        | 3      | Val        | -                                   | Val-Pro-Val
-12       | PRUNE      | 3      | Val        | charged ends exception              | Val-Pro-Val
-12       | ADD        | 3      | Glu        | -                                   | Val-Pro-Glu
-13       | PRUNE      | 3      | Glu        | charged ends exception              | Val-Pro-Glu
-13       | ADD        | 3      | Lys        | -                                   | Val-Pro-Lys
-14       | PRUNE      | 3      | Lys        | charged ends exception              | Val-Pro-Lys
-14       | ADD        | 3      | Gly        | -                                   | Val-Pro-Gly
-15       | PRUNE      | 3      | Gly        | charged ends exception              | Val-Pro-Gly
-15       | ADD        | 3      | Gln        | -                                   | Val-Pro-Gln
-16       | PRUNE      | 3      | Gln        | charged ends exception              | Val-Pro-Gln
-16       | ADD        | 3      | Met        | -                                   | Val-Pro-Met
-17       | PRUNE      | 3      | Met        | charged ends exception              | Val-Pro-Met
-17       | ADD        | 3      | His        | -                                   | Val-Pro-His
-18       | PRUNE      | 3      | His        | charged ends exception              | Val-Pro-His
-18       | ADD        | 3      | Phe        | -                                   | Val-Pro-Phe
-19       | PRUNE      | 3      | Phe        | charged ends exception              | Val-Pro-Phe
-19       | ADD        | 3      | Arg        | -                                   | Val-Pro-Arg
-20       | ADD        | 4      | Ser        | -                                   | Val-Pro-Arg-Ser
-21       | ADD        | 5      | Ile        | -                                   | Val-Pro-Arg-Ser-Ile
-22       | ADD        | 6      | Thr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr
-23       | ADD        | 7      | Leu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu
-24       | ADD        | 8      | Cys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys
-25       | ADD        | 9      | Ala        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala
-26       | ADD        | 10     | Asp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp
-27       | ADD        | 11     | Asn        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Asn
-28       | PRUNE      | 11     | Asn        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Asn
-28       | ADD        | 11     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val
-29       | ADD        | 12     | Asn        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn
-30       | ADD        | 13     | Glu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu
-31       | ADD        | 14     | Lys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys
-32       | ADD        | 15     | Gly        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gly
-33       | PRUNE      | 15     | Gly        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gly
-33       | ADD        | 15     | Gln        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln
-34       | ADD        | 16     | Gly        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Gly
-35       | PRUNE      | 16     | Gly        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Gly
-35       | ADD        | 16     | Met        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met
-36       | ADD        | 17     | Gly        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly
-37       | ADD        | 18     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-His
-38       | PRUNE      | 18     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-His
-38       | ADD        | 18     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val
-39       | ADD        | 19     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-His
-40       | PRUNE      | 19     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-His
-40       | ADD        | 19     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Phe
-41       | PRUNE      | 19     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Phe
-41       | ADD        | 19     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Tyr
-42       | PRUNE      | 19     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Tyr
-42       | ADD        | 19     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val
-43       | ADD        | 20     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-His
-44       | PRUNE      | 20     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-His
-44       | ADD        | 20     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Phe
-45       | PRUNE      | 20     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Phe
-45       | ADD        | 20     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Tyr
-46       | PRUNE      | 20     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Tyr
-46       | ADD        | 20     | Pro        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro
-47       | ADD        | 21     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-His
-48       | PRUNE      | 21     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-His
-48       | ADD        | 21     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Phe
-49       | PRUNE      | 21     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Phe
-49       | ADD        | 21     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Tyr
-50       | PRUNE      | 21     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Tyr
-50       | ADD        | 21     | Ser        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ser
-51       | PRUNE      | 21     | Ser        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ser
-51       | ADD        | 21     | Ile        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ile
-52       | PRUNE      | 21     | Ile        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ile
-52       | ADD        | 21     | Thr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Thr
-53       | PRUNE      | 21     | Thr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Thr
-53       | ADD        | 21     | Leu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Leu
-54       | PRUNE      | 21     | Leu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Leu
-54       | ADD        | 21     | Cys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Cys
-55       | PRUNE      | 21     | Cys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Cys
-55       | ADD        | 21     | Trp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Trp
-56       | PRUNE      | 21     | Trp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Trp
-56       | ADD        | 21     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Val
-57       | PRUNE      | 21     | Val        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Val
-57       | ADD        | 21     | Ala        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala
-58       | ADD        | 22     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-His
-59       | PRUNE      | 22     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-His
-59       | ADD        | 22     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Phe
-60       | PRUNE      | 22     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Phe
-60       | ADD        | 22     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Tyr
-61       | PRUNE      | 22     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Tyr
-61       | ADD        | 22     | Ser        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser
-62       | ADD        | 23     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-His
-63       | PRUNE      | 23     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-His
-63       | ADD        | 23     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Phe
-64       | PRUNE      | 23     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Phe
-64       | ADD        | 23     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Tyr
-65       | PRUNE      | 23     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Tyr
-65       | ADD        | 23     | Ile        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ile
-66       | PRUNE      | 23     | Ile        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ile
-66       | ADD        | 23     | Thr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Thr
-67       | PRUNE      | 23     | Thr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Thr
-67       | ADD        | 23     | Leu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Leu
-68       | PRUNE      | 23     | Leu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Leu
-68       | ADD        | 23     | Cys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Cys
-69       | PRUNE      | 23     | Cys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Cys
-69       | ADD        | 23     | Trp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Trp
-70       | PRUNE      | 23     | Trp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Trp
-70       | ADD        | 23     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Val
-71       | PRUNE      | 23     | Val        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Val
-71       | ADD        | 23     | Asp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Asp
-72       | PRUNE      | 23     | Asp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Asp
-72       | ADD        | 23     | Pro        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Pro
-73       | PRUNE      | 23     | Pro        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Pro
-73       | ADD        | 23     | Ser        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser
-74       | ADD        | 24     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-His
-75       | PRUNE      | 24     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-His
-75       | ADD        | 24     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Phe
-76       | PRUNE      | 24     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Phe
-76       | ADD        | 24     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Tyr
-77       | PRUNE      | 24     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Tyr
-77       | ADD        | 24     | Ile        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Ile
-78       | PRUNE      | 24     | Ile        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Ile
-78       | ADD        | 24     | Thr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Thr
-79       | PRUNE      | 24     | Thr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Thr
-79       | ADD        | 24     | Leu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Leu
-80       | PRUNE      | 24     | Leu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Leu
-80       | ADD        | 24     | Cys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Cys
-81       | PRUNE      | 24     | Cys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Cys
-81       | ADD        | 24     | Trp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Trp
-82       | PRUNE      | 24     | Trp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Trp
-82       | ADD        | 24     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Val
-83       | PRUNE      | 24     | Val        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Val
-83       | ADD        | 24     | Asp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Asp
-84       | PRUNE      | 24     | Asp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Asp
-84       | ADD        | 24     | Pro        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Pro
-85       | PRUNE      | 24     | Pro        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Pro
-85       | ADD        | 24     | Asn        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Asn
-86       | PRUNE      | 24     | Asn        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Asn
-86       | ADD        | 24     | Ser        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Ser
-87       | PRUNE      | 24     | Ser        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Ser
-87       | ADD        | 24     | Glu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Glu
-88       | PRUNE      | 24     | Glu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Glu
-88       | ADD        | 24     | Lys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Lys
-89       | PRUNE      | 24     | Lys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Lys
-89       | ADD        | 24     | Gly        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Gly
-90       | PRUNE      | 24     | Gly        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Gly
-90       | ADD        | 24     | Gln        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Gln
-91       | PRUNE      | 24     | Gln        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Gln
-91       | ADD        | 24     | Met        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Met
-92       | PRUNE      | 24     | Met        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Met
-92       | ADD        | 24     | Ala        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Ala
-93       | PRUNE      | 24     | Ala        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Ala
-93       | ADD        | 24     | Arg        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Arg
-94       | PRUNE      | 24     | Arg        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ser-Arg
-94       | ADD        | 23     | Asn        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Asn
-95       | PRUNE      | 23     | Asn        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Asn
-95       | ADD        | 23     | Glu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Glu
-96       | PRUNE      | 23     | Glu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Glu
-96       | ADD        | 23     | Lys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Lys
-97       | PRUNE      | 23     | Lys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Lys
-97       | ADD        | 23     | Gly        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly
-98       | ADD        | 24     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-His
-99       | PRUNE      | 24     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-His
-99       | ADD        | 24     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Phe
-100      | PRUNE      | 24     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Phe
-100      | ADD        | 24     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Tyr
-101      | PRUNE      | 24     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Tyr
-101      | ADD        | 24     | Ile        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Ile
-102      | PRUNE      | 24     | Ile        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Ile
-102      | ADD        | 24     | Thr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Thr
-103      | PRUNE      | 24     | Thr        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Thr
-103      | ADD        | 24     | Leu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Leu
-104      | PRUNE      | 24     | Leu        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Leu
-104      | ADD        | 24     | Cys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Cys
-105      | PRUNE      | 24     | Cys        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Cys
-105      | ADD        | 24     | Trp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Trp
-106      | PRUNE      | 24     | Trp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Trp
-106      | ADD        | 24     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val
-107      | ADD        | 25     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-His
-108      | PRUNE      | 25     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-His
-108      | ADD        | 25     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Phe
-109      | PRUNE      | 25     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Phe
-109      | ADD        | 25     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Tyr
-110      | PRUNE      | 25     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Tyr
-110      | ADD        | 25     | Ile        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Ile
-111      | PRUNE      | 25     | Ile        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Ile
-111      | ADD        | 25     | Thr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Thr
-112      | PRUNE      | 25     | Thr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Thr
-112      | ADD        | 25     | Leu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Leu
-113      | PRUNE      | 25     | Leu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Leu
-113      | ADD        | 25     | Cys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Cys
-114      | PRUNE      | 25     | Cys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Cys
-114      | ADD        | 25     | Trp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Trp
-115      | PRUNE      | 25     | Trp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Trp
-115      | ADD        | 25     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Val
-116      | PRUNE      | 25     | Val        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Val
-116      | ADD        | 25     | Asp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Asp
-117      | PRUNE      | 25     | Asp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Asp
-117      | ADD        | 25     | Pro        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Pro
-118      | PRUNE      | 25     | Pro        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Pro
-118      | ADD        | 25     | Ser        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Ser
-119      | PRUNE      | 25     | Ser        | haydrophobicity exception: Too low  | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Ser
-119      | ADD        | 25     | Asn        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Asn
-120      | PRUNE      | 25     | Asn        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Asn
-120      | ADD        | 25     | Glu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Glu
-121      | PRUNE      | 25     | Glu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Glu
-121      | ADD        | 25     | Lys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Lys
-122      | PRUNE      | 25     | Lys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Lys
-122      | ADD        | 25     | Gln        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Gln
-123      | PRUNE      | 25     | Gln        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Gln
-123      | ADD        | 25     | Met        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Met
-124      | PRUNE      | 25     | Met        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Met
-124      | ADD        | 25     | Ala        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Ala
-125      | PRUNE      | 25     | Ala        | haydrophobicity exception: Too low  | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Ala
-125      | ADD        | 25     | Arg        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Arg
-126      | PRUNE      | 25     | Arg        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Arg
-126      | ADD        | 25     | Gly        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Gly
-127      | PRUNE      | 25     | Gly        | haydrophobicity exception: Too low  | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Val-Gly
-127      | ADD        | 24     | Asp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Asp
-128      | PRUNE      | 24     | Asp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Asp
-128      | ADD        | 24     | Pro        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Pro
-129      | PRUNE      | 24     | Pro        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Pro
-129      | ADD        | 24     | Ser        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Ser
-130      | PRUNE      | 24     | Ser        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Ser
-130      | ADD        | 24     | Asn        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Asn
-131      | PRUNE      | 24     | Asn        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Asn
-131      | ADD        | 24     | Glu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Glu
-132      | PRUNE      | 24     | Glu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Glu
-132      | ADD        | 24     | Lys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Lys
-133      | PRUNE      | 24     | Lys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Lys
-133      | ADD        | 24     | Gln        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Gln
-134      | PRUNE      | 24     | Gln        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Gln
-134      | ADD        | 24     | Met        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Met
-135      | PRUNE      | 24     | Met        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Met
-135      | ADD        | 24     | Ala        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Ala
-136      | PRUNE      | 24     | Ala        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Ala
-136      | ADD        | 24     | Arg        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Arg
-137      | PRUNE      | 24     | Arg        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Arg
-137      | ADD        | 24     | Gly        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Gly
-138      | PRUNE      | 24     | Gly        | Folding exception: won't fold       | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gly-Gly
-138      | ADD        | 23     | Gln        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gln
-139      | PRUNE      | 23     | Gln        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Gln
-139      | ADD        | 23     | Met        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Met
-140      | PRUNE      | 23     | Met        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Met
-140      | ADD        | 23     | Ala        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala
-141      | ADD        | 24     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-His
-142      | PRUNE      | 24     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-His
-142      | ADD        | 24     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Phe
-143      | PRUNE      | 24     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Phe
-143      | ADD        | 24     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Tyr
-144      | PRUNE      | 24     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Tyr
-144      | ADD        | 24     | Ile        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Ile
-145      | PRUNE      | 24     | Ile        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Ile
-145      | ADD        | 24     | Thr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Thr
-146      | PRUNE      | 24     | Thr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Thr
-146      | ADD        | 24     | Leu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Leu
-147      | PRUNE      | 24     | Leu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Leu
-147      | ADD        | 24     | Cys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Cys
-148      | PRUNE      | 24     | Cys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Cys
-148      | ADD        | 24     | Trp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Trp
-149      | PRUNE      | 24     | Trp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Trp
-149      | ADD        | 24     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val
-150      | ADD        | 25     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-His
-151      | PRUNE      | 25     | His        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-His
-151      | ADD        | 25     | Phe        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Phe
-152      | PRUNE      | 25     | Phe        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Phe
-152      | ADD        | 25     | Tyr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Tyr
-153      | PRUNE      | 25     | Tyr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Tyr
-153      | ADD        | 25     | Ile        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Ile
-154      | PRUNE      | 25     | Ile        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Ile
-154      | ADD        | 25     | Thr        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Thr
-155      | PRUNE      | 25     | Thr        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Thr
-155      | ADD        | 25     | Leu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Leu
-156      | PRUNE      | 25     | Leu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Leu
-156      | ADD        | 25     | Cys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Cys
-157      | PRUNE      | 25     | Cys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Cys
-157      | ADD        | 25     | Trp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Trp
-158      | PRUNE      | 25     | Trp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Trp
-158      | ADD        | 25     | Val        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Val
-159      | PRUNE      | 25     | Val        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Val
-159      | ADD        | 25     | Asp        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Asp
-160      | PRUNE      | 25     | Asp        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Asp
-160      | ADD        | 25     | Pro        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Pro
-161      | PRUNE      | 25     | Pro        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Pro
-161      | ADD        | 25     | Ser        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Ser
-162      | PRUNE      | 25     | Ser        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Ser
-162      | ADD        | 25     | Asn        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Asn
-163      | PRUNE      | 25     | Asn        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Asn
-163      | ADD        | 25     | Glu        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Glu
-164      | PRUNE      | 25     | Glu        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Glu
-164      | ADD        | 25     | Lys        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Lys
-165      | PRUNE      | 25     | Lys        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Lys
-165      | ADD        | 25     | Gly        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Gly
-166      | PRUNE      | 25     | Gly        | haydrophobicity exception: Too low  | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Gly
-166      | ADD        | 25     | Gln        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Gln
-167      | PRUNE      | 25     | Gln        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Gln
-167      | ADD        | 25     | Met        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Met
-168      | PRUNE      | 25     | Met        | molecular mass exception: Too heavy | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Met
-168      | ADD        | 25     | Ala        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Ala
-169      | ADD        | 26     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Ala-His
-170      | DONE       | 26     | His        | -                                   | Val-Pro-Arg-Ser-Ile-Thr-Leu-Cys-Ala-Asp-Val-Asn-Glu-Lys-Gln-Met-Gly-Val-Val-Pro-Ala-Ser-Ala-Val-Ala-His
+1        | ADD        | 1      | Met        | -                                   | Met
+2        | ADD        | 2      | Cys        | -                                   | Met-Cys
+3        | ADD        | 3      | Ala        | -                                   | Met-Cys-Ala
+4        | PRUNE      | 3      | Ala        | charged ends exception              | Met-Cys-Ala
+4        | ADD        | 3      | Thr        | -                                   | Met-Cys-Thr
+5        | PRUNE      | 3      | Thr        | charged ends exception              | Met-Cys-Thr
+5        | ADD        | 3      | Leu        | -                                   | Met-Cys-Leu
+6        | PRUNE      | 3      | Leu        | charged ends exception              | Met-Cys-Leu
+6        | ADD        | 3      | Ser        | -                                   | Met-Cys-Ser
+7        | PRUNE      | 3      | Ser        | charged ends exception              | Met-Cys-Ser
+7        | ADD        | 3      | Phe        | -                                   | Met-Cys-Phe
+8        | PRUNE      | 3      | Phe        | charged ends exception              | Met-Cys-Phe
+8        | ADD        | 3      | Gly        | -                                   | Met-Cys-Gly
+9        | PRUNE      | 3      | Gly        | charged ends exception              | Met-Cys-Gly
+9        | ADD        | 3      | Ile        | -                                   | Met-Cys-Ile
+10       | PRUNE      | 3      | Ile        | charged ends exception              | Met-Cys-Ile
+10       | ADD        | 3      | Pro        | -                                   | Met-Cys-Pro
+11       | PRUNE      | 3      | Pro        | charged ends exception              | Met-Cys-Pro
+11       | ADD        | 3      | Val        | -                                   | Met-Cys-Val
+12       | PRUNE      | 3      | Val        | charged ends exception              | Met-Cys-Val
+12       | ADD        | 3      | Tyr        | -                                   | Met-Cys-Tyr
+13       | PRUNE      | 3      | Tyr        | charged ends exception              | Met-Cys-Tyr
+13       | ADD        | 3      | Trp        | -                                   | Met-Cys-Trp
+14       | PRUNE      | 3      | Trp        | charged ends exception              | Met-Cys-Trp
+14       | ADD        | 3      | Asn        | -                                   | Met-Cys-Asn
+15       | PRUNE      | 3      | Asn        | charged ends exception              | Met-Cys-Asn
+15       | ADD        | 3      | Asp        | -                                   | Met-Cys-Asp
+16       | PRUNE      | 3      | Asp        | charged ends exception              | Met-Cys-Asp
+16       | ADD        | 3      | Glu        | -                                   | Met-Cys-Glu
+17       | PRUNE      | 3      | Glu        | charged ends exception              | Met-Cys-Glu
+17       | ADD        | 3      | Gln        | -                                   | Met-Cys-Gln
+18       | PRUNE      | 3      | Gln        | charged ends exception              | Met-Cys-Gln
+18       | ADD        | 3      | Lys        | -                                   | Met-Cys-Lys
+19       | PRUNE      | 3      | Lys        | charged ends exception              | Met-Cys-Lys
+19       | ADD        | 3      | His        | -                                   | Met-Cys-His
+20       | PRUNE      | 3      | His        | charged ends exception              | Met-Cys-His
+20       | ADD        | 3      | Arg        | -                                   | Met-Cys-Arg
+21       | PRUNE      | 3      | Arg        | charged ends exception              | Met-Cys-Arg
+21       | ADD        | 3      | Met        | -                                   | Met-Cys-Met
+22       | PRUNE      | 3      | Met        | charged ends exception              | Met-Cys-Met
+22       | ADD        | 3      | Cys        | -                                   | Met-Cys-Cys
+23       | PRUNE      | 3      | Cys        | charged ends exception              | Met-Cys-Cys
+23       | ADD        | 2      | Ala        | -                                   | Met-Ala
+24       | ADD        | 3      | Cys        | -                                   | Met-Ala-Cys
+25       | PRUNE      | 3      | Cys        | charged ends exception              | Met-Ala-Cys
+25       | ADD        | 3      | Thr        | -                                   | Met-Ala-Thr
+26       | PRUNE      | 3      | Thr        | charged ends exception              | Met-Ala-Thr
+26       | ADD        | 3      | Leu        | -                                   | Met-Ala-Leu
+27       | PRUNE      | 3      | Leu        | charged ends exception              | Met-Ala-Leu
+27       | ADD        | 3      | Ser        | -                                   | Met-Ala-Ser
+28       | PRUNE      | 3      | Ser        | charged ends exception              | Met-Ala-Ser
+28       | ADD        | 3      | Phe        | -                                   | Met-Ala-Phe
+29       | PRUNE      | 3      | Phe        | charged ends exception              | Met-Ala-Phe
+29       | ADD        | 3      | Gly        | -                                   | Met-Ala-Gly
+30       | PRUNE      | 3      | Gly        | charged ends exception              | Met-Ala-Gly
+30       | ADD        | 3      | Ile        | -                                   | Met-Ala-Ile
+31       | PRUNE      | 3      | Ile        | charged ends exception              | Met-Ala-Ile
+31       | ADD        | 3      | Pro        | -                                   | Met-Ala-Pro
+32       | PRUNE      | 3      | Pro        | charged ends exception              | Met-Ala-Pro
+32       | ADD        | 3      | Val        | -                                   | Met-Ala-Val
+33       | PRUNE      | 3      | Val        | charged ends exception              | Met-Ala-Val
+33       | ADD        | 3      | Tyr        | -                                   | Met-Ala-Tyr
+34       | PRUNE      | 3      | Tyr        | charged ends exception              | Met-Ala-Tyr
+34       | ADD        | 3      | Trp        | -                                   | Met-Ala-Trp
+35       | PRUNE      | 3      | Trp        | charged ends exception              | Met-Ala-Trp
+35       | ADD        | 3      | Asn        | -                                   | Met-Ala-Asn
+36       | PRUNE      | 3      | Asn        | charged ends exception              | Met-Ala-Asn
+36       | ADD        | 3      | Asp        | -                                   | Met-Ala-Asp
+37       | PRUNE      | 3      | Asp        | charged ends exception              | Met-Ala-Asp
+37       | ADD        | 3      | Glu        | -                                   | Met-Ala-Glu
+38       | PRUNE      | 3      | Glu        | charged ends exception              | Met-Ala-Glu
+38       | ADD        | 3      | Gln        | -                                   | Met-Ala-Gln
+39       | PRUNE      | 3      | Gln        | charged ends exception              | Met-Ala-Gln
+39       | ADD        | 3      | Lys        | -                                   | Met-Ala-Lys
+40       | PRUNE      | 3      | Lys        | charged ends exception              | Met-Ala-Lys
+40       | ADD        | 3      | His        | -                                   | Met-Ala-His
+41       | PRUNE      | 3      | His        | charged ends exception              | Met-Ala-His
+41       | ADD        | 3      | Arg        | -                                   | Met-Ala-Arg
+42       | PRUNE      | 3      | Arg        | charged ends exception              | Met-Ala-Arg
+42       | ADD        | 3      | Met        | -                                   | Met-Ala-Met
+43       | PRUNE      | 3      | Met        | charged ends exception              | Met-Ala-Met
+43       | ADD        | 3      | Ala        | -                                   | Met-Ala-Ala
+44       | PRUNE      | 3      | Ala        | charged ends exception              | Met-Ala-Ala
+44       | ADD        | 2      | Thr        | -                                   | Met-Thr
+45       | ADD        | 3      | Cys        | -                                   | Met-Thr-Cys
+46       | PRUNE      | 3      | Cys        | charged ends exception              | Met-Thr-Cys
+46       | ADD        | 3      | Ala        | -                                   | Met-Thr-Ala
+47       | PRUNE      | 3      | Ala        | charged ends exception              | Met-Thr-Ala
+47       | ADD        | 3      | Leu        | -                                   | Met-Thr-Leu
+48       | PRUNE      | 3      | Leu        | charged ends exception              | Met-Thr-Leu
+48       | ADD        | 3      | Ser        | -                                   | Met-Thr-Ser
+49       | PRUNE      | 3      | Ser        | charged ends exception              | Met-Thr-Ser
+49       | ADD        | 3      | Phe        | -                                   | Met-Thr-Phe
+50       | PRUNE      | 3      | Phe        | charged ends exception              | Met-Thr-Phe
+50       | ADD        | 3      | Gly        | -                                   | Met-Thr-Gly
+51       | PRUNE      | 3      | Gly        | charged ends exception              | Met-Thr-Gly
+51       | ADD        | 3      | Ile        | -                                   | Met-Thr-Ile
+52       | PRUNE      | 3      | Ile        | charged ends exception              | Met-Thr-Ile
+52       | ADD        | 3      | Pro        | -                                   | Met-Thr-Pro
+53       | PRUNE      | 3      | Pro        | charged ends exception              | Met-Thr-Pro
+53       | ADD        | 3      | Val        | -                                   | Met-Thr-Val
+54       | PRUNE      | 3      | Val        | charged ends exception              | Met-Thr-Val
+54       | ADD        | 3      | Tyr        | -                                   | Met-Thr-Tyr
+55       | PRUNE      | 3      | Tyr        | charged ends exception              | Met-Thr-Tyr
+55       | ADD        | 3      | Trp        | -                                   | Met-Thr-Trp
+56       | PRUNE      | 3      | Trp        | charged ends exception              | Met-Thr-Trp
+56       | ADD        | 3      | Asn        | -                                   | Met-Thr-Asn
+57       | PRUNE      | 3      | Asn        | charged ends exception              | Met-Thr-Asn
+57       | ADD        | 3      | Asp        | -                                   | Met-Thr-Asp
+58       | ADD        | 4      | Cys        | -                                   | Met-Thr-Asp-Cys
+59       | ADD        | 5      | Ala        | -                                   | Met-Thr-Asp-Cys-Ala
+60       | ADD        | 6      | Leu        | -                                   | Met-Thr-Asp-Cys-Ala-Leu
+61       | ADD        | 7      | Ser        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Ser
+62       | PRUNE      | 7      | Ser        | Folding exception: won't fold       | Met-Thr-Asp-Cys-Ala-Leu-Ser
+62       | ADD        | 7      | Phe        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe
+63       | ADD        | 8      | Ser        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser
+64       | ADD        | 9      | Gly        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Gly
+65       | PRUNE      | 9      | Gly        | Folding exception: won't fold       | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Gly
+65       | ADD        | 9      | Ile        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Ile
+66       | ADD        | 10     | Gly        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Ile-Gly
+67       | ADD        | 11     | Pro        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Ile-Gly-Pro
+68       | ADD        | 12     | Val        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Ile-Gly-Pro-Val
+69       | ADD        | 13     | Tyr        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Ile-Gly-Pro-Val-Tyr
+70       | ADD        | 14     | Trp        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Ile-Gly-Pro-Val-Tyr-Trp
+71       | ADD        | 15     | Asn        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Ile-Gly-Pro-Val-Tyr-Trp-Asn
+72       | DONE       | 15     | Asn        | -                                   | Met-Thr-Asp-Cys-Ala-Leu-Phe-Ser-Ile-Gly-Pro-Val-Tyr-Trp-Asn
